@@ -1,14 +1,18 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: bisque;
-    font-family: 'Parisienne', cursive;
+    background-color:rgb(255, 212, 133)
+    
 }
 nav{
-background-color: red;
+background-color:white;
 width: 100%; 
 position: static;
 top: 0px;
+font-family: 'Sacramento', cursive;
+opacity: 0.9;
+position: sticky;
+z-index: 1000;
 }
 ul{
     display: flex;
@@ -17,14 +21,17 @@ ul{
 li{
     list-style: none;
     padding: 4px 33px;
-    color: white;
     font-size: 1.8rem;
-    font-weight: bold;
     margin: 10px 0px;
 }
 nav a {
     text-decoration:none ;
-    color: white;
+    color: rgb(250, 69, 69);
+    font-weight: bold;
+}
+nav ul img{
+    height: 70px;
+    width: 76px;
 }
 #delicacies{
     display: flex;
@@ -44,12 +51,122 @@ nav a {
     height: 200px;
 } 
 #sec{
-    background: url('https://media-cdn.tripadvisor.com/media/photo-s/11/1a/6d/c1/del-all-day-dining-bistro.jpg');
+    display: flex;
+    background: url('https://cache.marriott.com/marriottassets/marriott/AMDCY/amdcy-restaurant-0053-hor-feat.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    background-attachment: fixed;
+    height: auto;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 100px; ;
     color: azure;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#name{
+     display: flex;
+     width: 70%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+#name header{ 
+    font-size: 5rem;
+    font-weight: bold;
+}
+#book{
+     display: flex;
+     flex-direction: column;
+     width: 25%;
+     justify-content: center;
+     background-color: red;
+     background-image: url('https://www.freevector.com/uploads/vector/preview/7899/FreeVector-Red-Sparkles-Vector.jpg');
+     background-position: top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 50px;
+    }
+#fill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+#book header{
+    font-size: 1.6rem;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}    
+#fill input{
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 80%;
+}
+#fill textarea{
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+#btn{
+    font-size: 1.1rem;
+    background-color: red;
+    color: yellow;
+    border: solid 1px white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+}
+#history{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 150px 0px 150px 0px;
+    background-image: url('https://www.hotelierindia.com/public/images/2020/02/11/Top-15-restaurants-.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    margin-bottom: 40px;
+}
+#hist{
+    display: flex;
+    width: 75%;
+    color: white;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+}
+#hist header{
+color: white;
+font-size: 5rem;
+font-weight:bold;
+}
+#fotu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fotu img{
+    border: solid 14px white;
+    width: 80%;
+    height: 138%;
+}    
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    background-color: orange
+}
+footer a{
+    text-decoration: none;
+    color: white;
 }

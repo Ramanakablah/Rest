@@ -6,10 +6,11 @@ html(lang="en")
         title Home 
     style 
      include  ./views/Home.css 
-     import(url= `https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@400;700&display=swap`)
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap") 
     body 
      nav
       ul 
+       img(src="https://st.depositphotos.com/2926881/3774/v/950/depositphotos_37748769-stock-illustration-pizza-chef-logo.jpg", alt="logo")
        li #[a(href="/") Home]
        li #[a(href="/") Services]
        li #[a(href="/") Delivery]
@@ -31,4 +32,35 @@ html(lang="en")
           div#Delica  
            img(src="https://img-global.cpcdn.com/recipes/ff515314282d0608/1200x630cq70/photo.jpg", alt="Chhole Bhature.")
      section#sec
-      | section 1   
+      div#Name 
+       header 
+        |TAJ restaurnt
+       div#intro  
+        |Best Family services, For you and your family with 
+        |world class dinning servics 
+      div#book  
+       header 
+        |Fill up
+       form#fill(action="/") 
+        input(type="text" ,placeholder="Name", name="Name")
+        input(type="number", placeholder="Mobile number", name="Mob")
+        input(type="email", placeholder="E-Mail", name="E-mail")
+        input(type="date" ,name="Date")
+        input(type="time" ,name="Time")
+        textarea(name="Other", cols="30", rows="10", placeholder="Any other information or request you want to add")   
+        button#btn(type="submit") Submit 
+     section#history 
+      div#hist 
+       header 
+        |SINCE 1979. 
+       div#histo
+       |Maintaining the legacy of our Indian Culture with new addings. 
+      div#fotu
+       img(src="https://i.ndtvimg.com/i/2017-06/kolkata-cabin_620x350_51496644889.jpg", alt="Our first day")    
+     footer
+      div#copyright
+       | All copyrights &copy are reserved by Kr.Restraunts and owner.
+      div#contact 
+       |For our Prestigeous Services Contact the belows:
+      div#conta
+       a(href="/") 9876586765 / 9785447657   
