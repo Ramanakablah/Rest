@@ -1,0 +1,34 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home 
+    style 
+     include  ./views/Home.css 
+     import(url= `https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@400;700&display=swap`)
+    body 
+     nav
+      ul 
+       li #[a(href="/") Home]
+       li #[a(href="/") Services]
+       li #[a(href="/") Delivery]
+       li #[a(href="/") Bookings]
+       li #[a(href="/") About us] 
+       li #[a(href="/") Contact us] 
+     marquee(direction="left") 
+      div#delicacies  
+         div#slide 
+          div#Delica 
+           img(src="https://thechutneylife.com/wp-content/uploads/2017/09/Veg-Hakka-Noodles-The-Chutney-Life-4.jpg", alt="Hakka Noodle")  
+         div#slide 
+          div#Delica
+           img(src="https://rachnas-kitchen.com/wp-content/uploads/2017/07/rasmalai-2-e1505245876472-gpo.jpg", alt="Rasmalai")  
+         div#slide 
+          div#Delica  
+           img(src="https://img-global.cpcdn.com/recipes/2f833284044a3639/1200x630cq70/photo.jpg", alt="Biryani.") 
+         div#slide 
+          div#Delica  
+           img(src="https://img-global.cpcdn.com/recipes/ff515314282d0608/1200x630cq70/photo.jpg", alt="Chhole Bhature.")
+     section#sec
+      | section 1   

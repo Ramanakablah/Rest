@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque;
+    font-family: 'Parisienne', cursive;
+}
+nav{
+background-color: red;
+width: 100%; 
+position: static;
+top: 0px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+    padding: 4px 33px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+nav a {
+    text-decoration:none ;
+    color: white;
+}
+#delicacies{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#slide{
+    width: 50%;
+    margin: 2px;
+}
+#slide #intro{
+    width: 100%; 
+}
+#Delica img {
+    width: 100%;
+    height: 200px;
+} 
+#sec{
+    background: url('https://media-cdn.tripadvisor.com/media/photo-s/11/1a/6d/c1/del-all-day-dining-bistro.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px; ;
+    color: azure;
+}
