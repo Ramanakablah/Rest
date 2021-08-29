@@ -4,8 +4,11 @@ const Port = 8000;
 
 app.set('view engine', 'pug') 
 app.get('/',(req,res)=>{
-    res.status(200).render('../Home.pug')
+    res.status(200).render("../Home.pug")
+})
+app.get("/Services",(req,res)=>{
+    res.status(200).render("../Services.pug")
 })
  app.listen(Port,()=>{
-  console.log(`Localk host is served at port ${Port}`)
+  console.log(`Localhost is served at port ${Port}`)
  })
