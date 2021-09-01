@@ -12,6 +12,9 @@ app.get("/Services",(req,res)=>{
 app.get("/Delivery",(req,res)=>{
     res.status(200).render("../Delivery.pug")
 })
+app.get("/contact",(req,res)=>{
+    res.status(200).render("../contact.pug")
+})
  app.listen(Port,()=>{
   console.log(`Localhost is served at port ${Port}`)
  })

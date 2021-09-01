@@ -17,10 +17,11 @@ z-index: 1000;
 ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 li{
     list-style: none;
-    padding: 4px 33px;
+    padding: 4px ;
     font-size: 1.8rem;
     margin: 10px 0px;
 }
@@ -52,12 +53,14 @@ nav ul img{
 } 
 #sec{
     display: flex;
+    flex-wrap: wrap;
     background: url('https://cache.marriott.com/marriottassets/marriott/AMDCY/amdcy-restaurant-0053-hor-feat.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: auto;
     width: 100%;
+    justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 100px; ;
     color: azure;
@@ -66,10 +69,11 @@ nav ul img{
 }
 #name{
      display: flex;
-     width: 70%;
+     /* width: 70%; */
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
 }
 #name header{ 
     font-size: 5rem;
@@ -78,7 +82,7 @@ nav ul img{
 #book{
      display: flex;
      flex-direction: column;
-     width: 25%;
+     /* width: 25%; */
      justify-content: center;
      background-color: red;
      background-image: url('https://www.freevector.com/uploads/vector/preview/7899/FreeVector-Red-Sparkles-Vector.jpg');
@@ -110,6 +114,7 @@ nav ul img{
     border: none;
     border-radius: 8px;
     margin-top: 15px;
+    width: 80%;
 }
 #btn{
     font-size: 1.1rem;
@@ -122,6 +127,8 @@ nav ul img{
 }
 #history{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     padding: 150px 0px 150px 0px;
@@ -135,12 +142,14 @@ nav ul img{
 }
 #hist{
     display: flex;
-    width: 75%;
+    /* width: 75%; */
     color: white;
     justify-content: center;
     text-align: left;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #hist header{
 color: white;
@@ -151,18 +160,21 @@ font-weight:bold;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 #fotu img{
     border: solid 14px white;
     width: 80%;
-    height: 138%;
 }    
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    text-align: center;
     justify-content: center;
+    margin-top: 40px;
+    bottom: 0px;
     padding: 10px 0px 10px 0px;
     background-color: orange
 }
