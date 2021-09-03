@@ -1,18 +1,46 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color:rgb(255, 212, 133)
-    
+    background-color:rgb(255, 212, 133)   
 }
 nav{
-background-color:white;
-width: 100%; 
-position: static;
-top: 0px;
-font-family: 'Sacramento', cursive;
-opacity: 0.9;
-position: sticky;
-z-index: 1000;
+    background-color:white;
+    width: 100%; 
+    position: static;
+    top: 0px;
+    font-family: 'Sacramento', cursive;
+    opacity: 0.9;
+    position: sticky;
+    z-index: 1000;
+}
+#dropdown{
+    position: relative;
+    display: none;
+    left: 30px;
+}
+#drpbtn{
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+#buttoncontent{
+    background-color: rgb(146, 148, 253);
+    color: orange;
+    border: none;
+    display: none;
+    z-index: 1001;
+}
+#buttoncontent a{
+    text-decoration: none;
+    padding: 4px 9px;
+    display: block;
+    color: orange;
+    background-color: white;
+}
+#dropdown:hover #buttoncontent{
+    display: block;
 }
 ul{
     display: flex;
@@ -68,35 +96,35 @@ nav ul img{
     padding-bottom: 30px;
 }
 #name{
-     display: flex;
-     /* width: 70%; */
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
+    display: flex;
+    width: 70%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #name header{ 
     font-size: 5rem;
     font-weight: bold;
 }
 #book{
-     display: flex;
-     flex-direction: column;
-     /* width: 25%; */
-     justify-content: center;
-     background-color: red;
-     background-image: url('https://www.freevector.com/uploads/vector/preview/7899/FreeVector-Red-Sparkles-Vector.jpg');
-     background-position: top;
-     background-repeat: no-repeat;
-     background-size: cover;
-     border-radius: 50px;
-    }
+    display: flex;
+    flex-direction: column;
+    /* width: 25%; */
+    justify-content: center;
+    background-color: red;
+    background-image: url('https://www.freevector.com/uploads/vector/preview/7899/FreeVector-Red-Sparkles-Vector.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
 #fill{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+}
 #book header{
     font-size: 1.6rem;
     margin: 10px 0px 10px 0px;
@@ -152,9 +180,9 @@ nav ul img{
     margin-bottom: 20px;
 }
 #hist header{
-color: white;
-font-size: 5rem;
-font-weight:bold;
+    color: white;
+    font-size: 5rem;
+    font-weight:bold;
 }
 #fotu{
     display: flex;
@@ -181,4 +209,12 @@ footer{
 footer a{
     text-decoration: none;
     color: white;
+}
+@media (max-width:870px) {
+    nav ul li{
+        display: none;
+    }
+    nav ul li #dropdown{
+        display: block;
+    }    
 }
